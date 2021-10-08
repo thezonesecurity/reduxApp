@@ -1,8 +1,12 @@
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import { CounterReducer } from "../reducers/CounterReducer";
 import thunk from "redux-thunk";
+import { ApiReducers } from "../reducers/ApiReducers";
 
-const reducers = combineReducers({ counter: CounterReducer });
+const reducers = combineReducers({
+  counter: CounterReducer,
+  dataApi: ApiReducers,
+});
 /*
 const store = createStore(
   reducers,

@@ -1,6 +1,6 @@
 import { Types } from "../types/Types";
 
-export const CounterReducer = (state = 0, action) => {
+export const CounterReducer = (state = 1, action) => {
   switch (action.type) {
     case Types.IMCREMENT_COUNTER: {
       return state + action.payload;
