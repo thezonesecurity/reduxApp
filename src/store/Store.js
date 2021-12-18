@@ -2,10 +2,13 @@ import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import { CounterReducer } from "../reducers/CounterReducer";
 import thunk from "redux-thunk";
 import { ApiReducers } from "../reducers/ApiReducers";
+import { AuthReducers } from "../reducers/AuthReducers";
 
+//para usar mas de un reducers
 const reducers = combineReducers({
   counter: CounterReducer,
   dataApi: ApiReducers,
+  auth: AuthReducers,
 });
 /*
 const store = createStore(

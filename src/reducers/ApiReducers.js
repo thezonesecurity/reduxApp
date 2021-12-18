@@ -1,4 +1,3 @@
-import React from "react";
 import { Types } from "../types/Types";
 
 export const ApiReducers = (state = {}, action) => {

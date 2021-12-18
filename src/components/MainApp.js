@@ -1,12 +1,12 @@
 import React from "react";
 import { Provider } from "react-redux";
 import store from "../store/Store";
-import { CounterComponent } from "./CounterComponent";
+import { RouterApp } from "./RouterApp";
 
-export const CounterApp = () => {
+export const MainApp = () => {
   return (
     <Provider store={store}>
-      <CounterComponent />
+      <RouterApp />
     </Provider>
   );
 };
